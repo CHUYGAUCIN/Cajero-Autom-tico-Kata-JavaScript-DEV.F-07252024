@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Su Cajero</title>
+</head>
+<body>
+    <div class="containerCajero">
+        <h1 class="text-center">Su Cajero</h1>
+        <hr>
+     <div class="cardCajero">
+        <h4 class="saludo" id= "saludo"></h4> 
+        <img id="profile-picture" src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-Clipart.png" alt="Foto de perfil">
+        <h4><strong>¿Que deseas realizar hoy?</strong></h4>
+       <div class="actions">
+        <button id="btnConsultar">Consultar Saldo</button>  
+        <hr>
+        <input type="text" id="depositar" placeholder="Ingrese Monto a depositar: $">
+        <br>
+        <button id="btnDepositar">Depositar</button>
+        <hr>
+        <input type="text" id="retirar" placeholder="Ingrese Monto a retirar: $ ">
+        <br>
+        <button id="btnRetirar">Retirar</button>
+        <hr>
+        <button class="salir" id="salir" onclick="mostrarInicio()">Salir</button>
+          </div>
+     </div>
+     <hr>
+
+     <div class="cardSaldo">
+        
+        <div class="saldo-info"></div>
+        <h4 class="text-center">Saldo y Movimientos</h4>
+        
+        <p id="saldo"></p>
+        <p id="transaccion"></p>
+        <p id="nuevoSaldo"></p>
+        <p id="alerta" class="alerta"></p>
+        <p id="alertaSaldo" class="alerta"></p>
+        <p id="alertaTransaccion" class="alerta"></p>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
